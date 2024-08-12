@@ -1,4 +1,128 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .datetime {
+            text-align: center;
+            color: gray;
+        }
+
+        .date, .time {
+            font-size: 48px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 7cm);
+        }
+
+        .product {
+            width: calc(100% / 4);
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid red;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+        }
+
+        .product .content {
+            height: 200px;
+            overflow: hidden;
+        }
+
+.product img {
+    width: 100%;
+    height: 200px; /* Ajuste la hauteur selon tes besoins */
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le conteneur */
+}
+
+
+        .product .description {
+            margin-top: 10px;
+        }
+
+        .product .more-link {
+            margin-top: 5px;
+            cursor: pointer;
+            color: blue;
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            background-color: gray;
+            margin: 0 4px;
+            border-radius: 4px;
+        }
+
+        .pagination a:hover {
+            background-color: #575757;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .product {
+                width: calc(100% / 3);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .product {
+                width: 100%;
+            }
+        }
+
+        /* Style pour le bouton flottant */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="datetime">
+        <div class="date" id="comment"></div>
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <div class="container">
+      
+
 
 <div class="product"><a href="https://www.amazon.com/dp/B0046EJ570?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/31TFd1IdsRL._SL500_.jpg" alt="Product Image"></a><p>Watkins All Natural Original Gourmet Baking Vanilla, with Pure Vanilla Extract, 11 Fl Oz (Pack of 1) - Packaging May Vary</p><p>$12.35 ($1.12 / Fl Oz)</p><a href="https://www.amazon.com/dp/B0046EJ570?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B005MIWPGC?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41JyGkCDd7L._SL500_.jpg" alt="Product Image"></a><p>McCormick All Natural Pure Vanilla Extract (Made with Madagascar Vanilla Beans), 16 fl oz</p><p>$44.81 ($2.80 / Fl Oz)</p><a href="https://www.amazon.com/dp/B005MIWPGC?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00JW1OHWK?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/31SZp++74jL._SL500_.jpg" alt="Product Image"></a><p>Kirkland Signature Pure Vanilla Extract 16 ounce</p><p>$24.92</p><a href="https://www.amazon.com/dp/B00JW1OHWK?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0002UN7PI?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/31vmWVCpXuL._SL500_.jpg" alt="Product Image"></a><p>Simply Organic Vanilla Extract, Certified Organic | 4 oz | Pack of 1</p><p>$13.96 ($3.49 / Fl Oz)</p><a href="https://www.amazon.com/dp/B0002UN7PI?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B08CY88C2P?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/31KAiEK2q5L._SL500_.jpg" alt="Product Image"></a><p>Amazon Brand - Happy Belly Pure Vanilla Extract, 16 fl oz (Pack of 1)</p><p>$24.95 ($1.56 / Ounce)</p><a href="https://www.amazon.com/dp/B08CY88C2P?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0002QEL98?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/314Sxc7xGfL._SL500_.jpg" alt="Product Image"></a><p>Molina Vanilla Blend 16.6oz (500ml)</p><p>$9.95 ($0.60 / Fl Oz)</p><a href="https://www.amazon.com/dp/B0002QEL98?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B077MT496B?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51+Cnzpo38L._SL500_.jpg" alt="Product Image"></a><p>Nielsen-Massey Pure Vanilla Extract for Baking and Cooking, 8 Ounce Bottle</p><p>$37.95 ($4.74 / Fl Oz)</p><a href="https://www.amazon.com/dp/B077MT496B?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 
@@ -228,4 +352,46 @@
 <div class="product"><a href="https://www.amazon.com/dp/B01MQ6BDM0?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51chxbCoRfL._SL500_.jpg" alt="Product Image"></a><p>Libby's Vienna Sausage in Chicken Broth, Canned Sausage, 4.6 OZ (Pack of 24)</p><p>$24.00 ($1.00 / Count)</p><a href="https://www.amazon.com/dp/B01MQ6BDM0?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B006GXQHKW?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41gffgWPG4L._SL500_.jpg" alt="Product Image"></a><p>Old Wisconsin Premium Summer Sausage, 100% Natural Meat, Charcuterie, Ready to Eat, High Protein, Low Carb, Keto, Gluten Free, Original Flavor, 8 Ounce</p><p>$9.37 ($1.17 / Count)</p><a href="https://www.amazon.com/dp/B006GXQHKW?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B077RX98DQ?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51NtE8UfsyL._SL500_.jpg" alt="Product Image"></a><p>Hickory Farms Beef Summer Sausage 10 Ounce (Pack of 4)</p><p>$39.99 ($16.00 / lb)</p><a href="https://www.amazon.com/dp/B077RX98DQ?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B07284DYDL?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51qXOVY-FxL._SL500_.jpg" alt="Product Image"></a><p>PEARSON RANCH SINCE 1959 Game Meat Summer Sausage Variety Pack of 3 Elk, Buffalo, Venison, Exotic Meat, Summer Sausage Pack, Gluten-Free, MSG-Free</p><p>$29.99 ($23.99 / lb)</p><a href="https://www.amazon.com/dp/B07284DYDL?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 <div class="product"><a href="https://www.amazon.com/dp/B003D5TN84?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/511eYCwbZAL._SL500_.jpg" alt="Product Image"></a><p>Stonewall Kitchen Traditional Crepe Mix, 16 Ounce</p><p>$11.72 ($0.73 / Ounce)</p><a href="https://www.amazon.com/dp/B003D5TN84?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0CWS8SH41?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41DOHLQ81iL._SL500_.jpg" alt="Product Image"></a><p>Jacquet Plain Crepe 10 French Crepes Ready to Eat per Pack | 10.5 oz | French Snacks French Pancakes to Go Unflavored Crepes to Go Ready to Eat Breakfast</p><p>$14.99 ($1.43 / Ounce)</p><a href="https://www.amazon.com/dp/B0CWS8SH41?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B09Z27HFM9?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51dZrgiQJQL._SL500_.jpg" alt="Product Image"></a><p>Farin'UP French Crepe Mix, Just Add Milk, 16oz | No Crepe Pan Needed | Resealable, No Mess Packaging (Pack of 1)</p><p>$15.00 ($0.94 / Fl Oz)</p><a href="https://www.amazon.com/dp/B09Z27HFM9?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B01146AFU8?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41vsUEtfspL._SL500_.jpg" alt="Product Image"></a><p>JACQUET Plain Crepe 10PK, 10.5 OZ</p><p>$15.04 ($1.43 / Ounce)</p><a href="https://www.amazon.com/dp/B01146AFU8?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 <div class="product"><a href="https://www.amazon.com/dp/B0872ZMXBG?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51ae3gTqSyL._SL500_.jpg" alt="Product Image"></a><p>OREO Original, OREO Golden, CHIPS AHOY! & Nutter Butter Cookie Snacks Variety Pack, School Lunch Box Snacks, 56 Snack Packs (2 Cookies Per Pack)</p><p>$22.58 ($0.40 / Count)</p><a href="https://www.amazon.com/dp/B0872ZMXBG?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00XM5KSV6?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/61+jHBBab5L._SL500_.jpg" alt="Product Image"></a><p>Royal Dansk Danish Butter Cookies, 24 Oz. (Pack of 1)</p><p>$9.72 ($0.40 / Ounce)</p><a href="https://www.amazon.com/dp/B00XM5KSV6?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0CJX8N1H1?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51EQKTsunGL._SL500_.jpg" alt="Product Image"></a><p>Famous Amos Classic Chocolate Chip Cookies, 1 Ounce Bag (Pack of 12)</p><p>$6.46 ($0.54 / Ounce)</p><a href="https://www.amazon.com/dp/B0CJX8N1H1?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B071XHP12B?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51Ku+zVywBL._SL500_.jpg" alt="Product Image"></a><p>Nabisco Sweet Treats Cookie Variety Pack OREO, OREO Golden & CHIPS AHOY!, 30 Snack Packs (2 Cookies Per Pack)</p><p>$12.97 ($0.22 / Count)</p><a href="https://www.amazon.com/dp/B071XHP12B?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00U9WS33K?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51DWpRHUMfL._SL500_.jpg" alt="Product Image"></a><p>Keebler Fudge Cookies, Coconut Dreams, 8.5oz</p><p>$2.98 ($0.35 / Ounce)</p><a href="https://www.amazon.com/dp/B00U9WS33K?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0C449R6PX?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51gYw+7VBbL._SL500_.jpg" alt="Product Image"></a><p>Nutella Biscuits, 20 Count Cookies, Hazelnut Spread with Cocoa, Kids Snacks, 9.7 oz​</p><p>$4.48 ($0.46 / Ounce)</p><a href="https://www.amazon.com/dp/B0C449R6PX?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B074N4BYPW?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51EjDi8oh9L._SL500_.jpg" alt="Product Image"></a><p>Lotus Biscoff Cookies, Caramelized Biscuit Cookie Snack, Dispenser Box (20 sleeves of 2 extra large cookies) Vegan, 0.9 Ounce (Pack of 20)</p><p>$7.68 ($0.44 / Ounce)</p><a href="https://www.amazon.com/dp/B074N4BYPW?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0C7FTBTWL?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51v09idc1GL._SL500_.jpg" alt="Product Image"></a><p>CHIPS AHOY! Cookie Variety Pack, Original Chocolate Chip, Chewy Chocolate Chip with Reese's Peanut Butter Cups & Chewy Hershey's Fudge Filled Soft Cookies, 50 Snack Packs (2 Cookies Per Pack)</p><p>$24.98 ($0.50 / Count)</p><a href="https://www.amazon.com/dp/B0C7FTBTWL?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0CTRZS6NY?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51mqSjwGWbL._SL500_.jpg" alt="Product Image"></a><p>Pillsbury Chocolate Chip Mini Soft Baked Cookies 10 CT</p><p>$4.88 ($0.49 / Ounce)</p><a href="https://www.amazon.com/dp/B0CTRZS6NY?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
-2
+
+    </div>
+
+    <!-- Bouton flottant -->
+    <button class="floating-button" onclick="window.location.href='https://www.iasmarket.us'">HOME</button>
+<div class="pagination">
+        <a href=" ">0</a>
+        <!-- Ajoutez plus de liens si nécessaire -->
+    </div>
+    <script>
+        function updateTime() {
+            const optionsDate = {
+                timeZone: 'America/Los_Angeles',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                weekday: 'long'
+            };
+            const optionsTime = {
+                timeZone: 'America/Los_Angeles',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+
+            const now = new Date();
+            const formatterDate = new Intl.DateTimeFormat('en-US', optionsDate);
+            const formatterTime = new Intl.DateTimeFormat('en-US', optionsTime);
+
+            const formattedDate = formatterDate.format(now);
+            const formattedTime = formatterTime.format(now);
+
+            document.getElementById('comment').textContent = "As an AMAZON Associate, I earn from qualifying purchases.";
+            document.getElementById('date').textContent = formattedDate;
+            document.getElementById('time').textContent = formattedTime;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>
